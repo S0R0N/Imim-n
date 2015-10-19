@@ -28,7 +28,7 @@ scopusPage <- function(t=0,p=25,Q="TITLE-ABS-KEY({Big data}) AND (DOCTYPE(ar) OR
     for(i in 1:times){
         ind<-p*i
         r <- GET("http://api.elsevier.com/content/search/scopus",
-                 query = list(apiKey="875d7dbfe75bc22ad0ba65e7ad070911",
+                 query = list(apiKey="-------",
                               query=paste(Q),
                               date=paste(D),
                               field="dc:title,dc:description,authkeywords,intid,citedby-count,prism:doi",
